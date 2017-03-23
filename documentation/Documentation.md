@@ -1,5 +1,12 @@
 # wifi\_gateway\_mqtt Documentation
 
-## Library
+## Libraries
 
 ## Function Reference
+
+### Setup
+
+#### initConfigureMode()
+
+
+### Loop
