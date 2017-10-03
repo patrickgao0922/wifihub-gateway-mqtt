@@ -1075,6 +1075,128 @@
 							"nameLabel": {
 								"$ref": "AAAAAAFa+HVnzENziHE="
 							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFa+IQay0ObJd4=",
+							"_parent": {
+								"$ref": "AAAAAAFa+FwW0kJ/6qE="
+							},
+							"model": {
+								"$ref": "AAAAAAFa+IQaykOZTWU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFa+IQay0OcAz8=",
+									"_parent": {
+										"$ref": "AAAAAAFa+IQay0ObJd4="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 842,
+									"top": 482,
+									"width": 55,
+									"height": 52,
+									"autoResize": false,
+									"underline": false,
+									"text": "Set the Wifi for Station Mode",
+									"horizontalAlignment": 2,
+									"verticalAlignment": 5,
+									"wordWrap": true
+								}
+							],
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"left": 832,
+							"top": 472,
+							"width": 75,
+							"height": 72,
+							"autoResize": false,
+							"nameLabel": {
+								"$ref": "AAAAAAFa+IQay0OcAz8="
+							},
+							"wordWrap": true
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFa+IQa50OjXp0=",
+							"_parent": {
+								"$ref": "AAAAAAFa+FwW0kJ/6qE="
+							},
+							"model": {
+								"$ref": "AAAAAAFa+IQa5kOh9vQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFa+IQa6EOkglM=",
+									"_parent": {
+										"$ref": "AAAAAAFa+IQa50OjXp0="
+									},
+									"model": {
+										"$ref": "AAAAAAFa+IQa5kOh9vQ="
+									},
+									"visible": false,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 798,
+									"top": 491,
+									"width": 0,
+									"height": 13,
+									"autoResize": false,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFa+IQa50OjXp0="
+									},
+									"edgePosition": 1,
+									"underline": false,
+									"horizontalAlignment": 2,
+									"verticalAlignment": 5,
+									"wordWrap": false
+								}
+							],
+							"visible": true,
+							"enabled": true,
+							"lineColor": "#000000",
+							"fillColor": "#ffffff",
+							"fontColor": "#000000",
+							"font": "Arial;13;0",
+							"showShadow": true,
+							"containerChangeable": false,
+							"containerExtending": false,
+							"head": {
+								"$ref": "AAAAAAFa+IQay0ObJd4="
+							},
+							"tail": {
+								"$ref": "AAAAAAFa+HVnuENqiAw="
+							},
+							"lineStyle": 2,
+							"points": "764:512;832:512",
+							"nameLabel": {
+								"$ref": "AAAAAAFa+IQa6EOkglM="
+							}
 						}
 					]
 				},
@@ -1325,7 +1447,22 @@
 					"_parent": {
 						"$ref": "AAAAAAFa+FwW0kJ+Q40="
 					},
-					"name": "Disconnect Wifi from current Router"
+					"name": "Disconnect Wifi from current Router",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFa+IQa5kOh9vQ=",
+							"_parent": {
+								"$ref": "AAAAAAFa+HVnuENovnY="
+							},
+							"source": {
+								"$ref": "AAAAAAFa+HVnuENovnY="
+							},
+							"target": {
+								"$ref": "AAAAAAFa+IQaykOZTWU="
+							}
+						}
+					]
 				},
 				{
 					"_type": "FCProcess",
@@ -1333,6 +1470,14 @@
 					"_parent": {
 						"$ref": "AAAAAAFa+FwW0kJ+Q40="
 					}
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFa+IQaykOZTWU=",
+					"_parent": {
+						"$ref": "AAAAAAFa+FwW0kJ+Q40="
+					},
+					"name": "Set the Wifi for Station Mode"
 				}
 			]
 		}
